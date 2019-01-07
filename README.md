@@ -44,7 +44,7 @@ The folder 'data' contains two benchmarks:
 1. Financial benchmark with stock returns, taken from [S. Kleinberg](http://www.skleinberg.org/data.html) (Finance CPT) and preprocessed
 2. Neuroscientific FMRI benchmark with brain networks, taken from [Smith et al.](http://www.fmrib.ox.ac.uk/datasets/netsim/) and preprocessed
 
-Furthermore, there is one small dataset for demonstration purposes (which is a subset of a financial dataset).
+Furthermore, there is one small dataset for demonstration purposes.
 
 ### Running
 
@@ -54,5 +54,3 @@ To evaluate the predictions made by TCDF, run `evaluate_predictions_TCDF`. Use -
 
 Check out the Jupyter Notebook `TCDF Demo` to see an example. 
 
-
- 
