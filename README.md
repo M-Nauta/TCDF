@@ -3,7 +3,20 @@
 The Temporal Causal Discovery Framework (TCDF) is a deep learning framework implemented in PyTorch that learns a causal graph structure by discovering causal relationships in observational time series data. TCDF uses Attention-based Convolutional Neural Networks combined with a causal validation step. By interpreting the internal parameters of the convolutional networks, TCDF can also discover the time delay between a cause and the occurrence of its effect. Our framework learns temporal causal graphs, which can include confounders and instantaneous effects.  This broadly applicable framework can be used to gain novel insights into the causal dependencies in a complex system, which is important for reliable predictions, knowledge discovery and data-driven decision making.
 
 Corresponding Paper: ["Causal Discovery with Attention-Based Convolutional Neural Networks"](https://www.mdpi.com/2504-4990/1/1/19).
-Please cite this paper when using TCDF.
+Please cite this paper when using TCDF:
+
+```
+@article{nauta2019causal,
+  title={Causal Discovery with Attention-Based Convolutional Neural Networks},
+  author={Nauta, Meike and Bucur, Doina and Seifert, Christin,
+  journal={Machine Learning and Knowledge Extraction},
+  volume={1},
+  number={1},
+  pages={312-340},
+  year={2019},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+```
 
 ## Functionality
 
@@ -53,4 +66,3 @@ Run `runTCDF.py --data yourdataset.csv` to run TCDF on your own dataset. TCDF wi
 To evaluate the predictions made by TCDF, run `evaluate_predictions_TCDF`. Use --help to see all argument options.
 
 Check out the Jupyter Notebook `TCDF Demo` to see an example. 
-
