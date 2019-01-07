@@ -8,7 +8,7 @@ Please cite this paper when using TCDF:
 ```
 @article{nauta2019causal,
   title={Causal Discovery with Attention-Based Convolutional Neural Networks},
-  author={Nauta, Meike and Bucur, Doina and Seifert, Christin,
+  author={Nauta, Meike and Bucur, Doina and Seifert, Christin},
   journal={Machine Learning and Knowledge Extraction},
   volume={1},
   number={1},
