@@ -275,7 +275,7 @@ def main(datafiles, evaluation):
             plotgraph(stringdatafile, alldelays, columns)
 
     # In case of multiple datasets, calculate average F1-score over all datasets and standard deviation
-    if len(datafiles.keys())>1:  
+    if len(datafiles.keys())>1 and evaluation:  
         print("\nOverall Evaluation: \n")      
         print("F1' scores: ")
         for f in totalF1:
