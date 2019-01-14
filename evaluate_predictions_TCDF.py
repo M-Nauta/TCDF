@@ -81,7 +81,7 @@ def evaluate_prediction(target, cuda, epochs, kernel_size, layers,
 
     model.eval()
     output = model(X_test)
-    prediction=output.detach().numpy()[0,:,0]
+    prediction=output.cpu().detach().numpy()[0,:,0]
     T = output.size()[1]
     total_e = 0.
     for t in range(T):
@@ -191,7 +191,4 @@ if len(datasets)>1:
     print("=========================Overall Evaluation====================================")
     print("Average MASE over all datasets: ", overallavg)
     print("Standard Deviation MASE over all datasets: ", overallstd)
-
-
-
 
