@@ -1,22 +1,12 @@
 # TCDF: Temporal Causal Discovery Framework
 
-The Temporal Causal Discovery Framework (TCDF) is a deep learning framework implemented in PyTorch that learns a causal graph structure by discovering causal relationships in observational time series data. TCDF uses Attention-based Convolutional Neural Networks combined with a causal validation step. By interpreting the internal parameters of the convolutional networks, TCDF can also discover the time delay between a cause and the occurrence of its effect. Our framework learns temporal causal graphs, which can include confounders and instantaneous effects.  This broadly applicable framework can be used to gain novel insights into the causal dependencies in a complex system, which is important for reliable predictions, knowledge discovery and data-driven decision making.
+The Temporal Causal Discovery Framework (TCDF) is a deep learning framework implemented in PyTorch. Given multiple time series as input, TCDF discovers **causal relationships** between these time series and outputs a causal graph. It can also predict one time series based on other time series. TCDF uses Attention-based Convolutional Neural Networks combined with a causal validation step. By interpreting the internal parameters of the convolutional networks, TCDF can also discover the **time delay** between a cause and its effect. 
+
+The learnt temporal causal graphs can include confounders and instantaneous effects.  This broadly applicable framework can be used to gain novel insights into the causal dependencies in a complex system, which is important for reliable predictions, knowledge discovery and data-driven decision making. 
 
 Corresponding Paper: ["Causal Discovery with Attention-Based Convolutional Neural Networks"](https://www.mdpi.com/2504-4990/1/1/19).
-Please cite this paper when using TCDF:
 
-```
-@article{nauta2019causal,
-  title={Causal Discovery with Attention-Based Convolutional Neural Networks},
-  author={Nauta, Meike and Bucur, Doina and Seifert, Christin},
-  journal={Machine Learning and Knowledge Extraction},
-  volume={1},
-  number={1},
-  pages={312-340},
-  year={2019},
-  publisher={Multidisciplinary Digital Publishing Institute}
-}
-```
+![Multivariate time series as input, causal graph as output](https://res.mdpi.com/make/make-01-00019/article_deploy/html/images/make-01-00019-g001.png)
 
 ## Functionality
 
@@ -26,6 +16,7 @@ Please cite this paper when using TCDF:
 * Plots temporal causal graph
 * Plots predicted time series
 
+Check out the Jupyter Notebook `TCDF Demo` to see a demonstration of the functionality. 
 ## Prerequisites
 
 ### General
@@ -61,8 +52,28 @@ Furthermore, there is one small dataset for demonstration purposes.
 
 ### Running
 
-Run `runTCDF.py --data yourdataset.csv` to run TCDF on your own dataset. TCDF will discover causal relationships between time series in the dataset and their time delay. If the ground truth is available, the results of TCDF can be compared with the ground truth for evaluation as follows: `runTCDF.py --ground_truth yourdataset.csv=yourgroundtruth.csv`. Use --help to see all argument options.
+Check out the Jupyter Notebook `TCDF Demo` to see a demonstration of the functionality. 
+
+Run `runTCDF.py --data yourdataset.csv` to run TCDF on your own dataset(s). TCDF will discover causal relationships between time series in the dataset and their time delay. 
+
+If the ground truth is available, the results of TCDF can be compared with the ground truth for evaluation as follows: `runTCDF.py --ground_truth yourdataset.csv=yourgroundtruth.csv`. Use --help to see all argument options.
 
 To evaluate the predictions made by TCDF, run `evaluate_predictions_TCDF`. Use --help to see all argument options.
+ 
+## Paper
 
-Check out the Jupyter Notebook `TCDF Demo` to see an example. 
+Corresponding Paper (peer-reviewed, open access): ["Causal Discovery with Attention-Based Convolutional Neural Networks"](https://www.mdpi.com/2504-4990/1/1/19). 
+Please cite this paper when using TCDF:
+
+```
+@article{nauta2019causal,
+  title={Causal Discovery with Attention-Based Convolutional Neural Networks},
+  author={Nauta, Meike and Bucur, Doina and Seifert, Christin},
+  journal={Machine Learning and Knowledge Extraction},
+  volume={1},
+  number={1},
+  pages={312-340},
+  year={2019},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+```
