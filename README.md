@@ -45,8 +45,8 @@ CSV file (comma separated) with header and a column for each time series.
 
 #### Data provided
 The folder 'data' contains two benchmarks:
-1. Financial benchmark with stock returns, taken from [S. Kleinberg](http://www.skleinberg.org/data.html) (Finance CPT) and preprocessed
-2. Neuroscientific FMRI benchmark with brain networks, taken from [Smith et al.](http://www.fmrib.ox.ac.uk/datasets/netsim/) and preprocessed
+1. Financial benchmark with stock returns, taken from [S. Kleinberg](http://www.skleinberg.org/data.html) (Finance CPT) and preprocessed. Files with 'returns' in the filename are the input datasets, the other files contain the ground truth. 
+2. Neuroscientific FMRI benchmark with brain networks, taken from [Smith et al.](http://www.fmrib.ox.ac.uk/datasets/netsim/) and preprocessed. Files with 'timeseries' in the filename are the input datasets, the other files contain the ground truth. 
 
 Furthermore, there is one small dataset for demonstration purposes.
 
