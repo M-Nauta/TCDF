@@ -59,6 +59,8 @@ Run `runTCDF.py --data yourdataset.csv` to run TCDF on your own dataset(s). TCDF
 If the ground truth is available, the results of TCDF can be compared with the ground truth for evaluation as follows: `runTCDF.py --ground_truth yourdataset.csv=yourgroundtruth.csv`. Use --help to see all argument options.
 
 To evaluate the predictions made by TCDF, run `evaluate_predictions_TCDF`. Use --help to see all argument options.
+
+_Feel free to improve TCDF. Some [closed issues](https://github.com/M-Nauta/TCDF/issues?q=is%3Aissue+is%3Aclosed) already mention some suggestions._  
  
 ## Paper
 
